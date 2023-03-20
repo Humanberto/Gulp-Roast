@@ -9,24 +9,18 @@ https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/
 html,
 body {
     min-height: 100vh;
+    font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #2c2221;
+        background-color: #e9e3e2;
+        font-family: 'Work Sans', sans-serif;
 }
 
 html {
   box-sizing: border-box;
   width: 100%;
-    font-family: 'EB Garamond', serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Vollkorn', serif;
-    font-family: 'Work Sans', sans-serif;
-}
 
-body {
-  font-family: "Work Sans", "Roboto" sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #2c2221;
-  background-color: #e9e3e2;
 }
 
 h1,
@@ -35,6 +29,8 @@ h3,
 h4 {
   font-family: "Vollkorn", "EB Garamond", serif;
   font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 h1 {
@@ -183,10 +179,11 @@ margin-left: 24px;
 *::before *::after {
     box-sizing: border-box;
 }
-.about {
-    display: flex;
+/* .about { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, .5fr));
 }
-
+*/
 .about-maintext {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1fr, .5fr));
@@ -198,11 +195,11 @@ margin-left: 24px;
         text-align: top;
         max-width: 95%;
         margin-left: 48px;
-        margin-bottom: 4rem;
+        margin-bottom: 48px;
 }
 
 .about-maintext article {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .coffee-image aside {
@@ -233,6 +230,8 @@ figcaption {
   max-width: 80%;
   text-align: left;
   font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 p a:link,
@@ -285,6 +284,7 @@ a:visited {
 
 .product-button {
     margin-top: 4rem;
+    align-self: baseline;
 }
 
 
